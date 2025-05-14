@@ -25,20 +25,116 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 /* Nav Bar */
 .navbar{
   display: flex;
   justify-content: space-between;
   background-color: rgb(19, 25, 33);
+  padding: 2%;
+  height: 6vh;
 }
 
 .navbar-btn{
   background-color: rgb(19, 25, 33);
   color: rgb(247, 247, 248);
   border: none;
+  
+
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-btn{
+  background-color: rgb(19, 25, 33);
+  
+  border: none;
+  margin-top: -2%;
 }
 
 .navbar-btn:hover{
   border: solid 1px rgb(255, 255, 255);
-  border-collapse: collapse;
+}
+
+.image-btn:hover{
+  border: solid 1px rgb(255, 255, 255);
+}
+
+.search-space{
+  margin: 0%;
+  width: 50%;
+}
+
+.all-btn{
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 2%;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-bar{
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 2%;
+  border: none;
+}
+
+.search-btn{
+  padding: 2%;
+  font-size: 1rem;
+  background-color: rgb(243, 168, 71);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navbar-btn-up{
+  font-size: 0.78rem;
+}
+
+.deliver{
+  color: rgb(204, 204, 204);
+}
+
+.navbar-btn-down{
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.cart{
+  font-size: 2rem;
+}
+
+.zero{
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(240, 136, 4);
+}
+
+.navbar2{
+  background-color: rgb(35, 47, 62);  
+}
+
+.navbar2 button{
+  background-color: rgb(35, 47, 62);
+  border: none;
+  color: rgb(247, 247, 248);
+  text-transform: capitalize;
+  font-size: 1rem; 
+  padding: 1%;
+}
+
+.navbar2 button:hover{
+  border: solid 1px rgb(255, 255, 255);
 }
