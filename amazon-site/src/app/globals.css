@@ -156,7 +156,7 @@ body {
   background-color: rgb(35, 47, 62);
   display: flex;
   justify-content: space-around;
-  border-bottom: solid 1px rgb(58, 69, 83);  
+  border-bottom: solid 1px rgb(58, 69, 83);
 }
 
 .footer-row {
@@ -171,7 +171,7 @@ body {
 .footer-links {
   display: flex;
   flex-direction: column;
-  line-height:  1.5rem;
+  line-height: 1.5rem;
   text-decoration: none;
   font-size: 0.8rem;
 }
@@ -185,7 +185,7 @@ body {
   text-decoration: underline;
 }
 
-.footer-layer3{
+.footer-layer3 {
   background-color: rgb(35, 47, 62);
   width: 100%;
   display: flex;
@@ -196,17 +196,71 @@ body {
   height: 10vh;
 }
 
-.footer-layer3-btn{
+.footer-layer3-btn {
   display: flex;
   flex-direction: row;
   gap: 2%;
   width: 25%;
 }
 
-.footer-layer3-btn button{
+.footer-layer3-btn button {
   padding: 3%;
   background-color: rgb(35, 47, 62);
   border: solid 1px rgb(132, 134, 136);
   color: rgb(193, 204, 195);
   border-radius: 5px;
+}
+
+.footer-layer4 {
+  background-color: rgb(19, 26, 34);
+  height: max-content;
+  padding: 5%;
+  padding-bottom: 2%;
+}
+
+.footer-layer4-link {
+  color: rgb(144, 145, 145);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-layer4-link div {
+  color: rgb(214, 214, 215);
+}
+
+.footer-layer4-link:hover {
+  text-decoration: underline;
+}
+
+.footer-layer-level {
+  display: grid;
+  grid-template-columns: repeat(7, 9%);
+  justify-content: center;
+  gap: 2%;
+  padding-bottom: 1%;
+}
+
+.footer-layer5 {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1%;
+  padding-top: 5%;
+}
+
+.footer-layer5 a {
+  color: rgb(214, 214, 215);
+  text-decoration: none;
+}
+
+.footer-layer5 a:hover {
+  text-decoration: underline;
+}
+
+.footer-layer6 {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(214, 214, 215);
 }
