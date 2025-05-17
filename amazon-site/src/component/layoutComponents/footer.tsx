@@ -1,5 +1,5 @@
 import Image from "next/image"
-import amazonLogo2 from "../asset/image/amazon2.jpg"
+import amazonLogo2 from "../../asset/image/amazon2.jpg"
 
 export default function Footer() {
     const presentYear = new Date().getFullYear();

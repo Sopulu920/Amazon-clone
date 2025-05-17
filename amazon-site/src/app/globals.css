@@ -52,17 +52,18 @@ body {
 
 .image-btn {
   background-color: rgb(19, 25, 33);
-
   border: none;
   margin-top: -2%;
 }
 
 .navbar-btn:hover {
   border: solid 1px rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .image-btn:hover {
   border: solid 1px rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .search-space {
@@ -263,4 +264,37 @@ body {
   display: flex;
   justify-content: center;
   color: rgb(214, 214, 215);
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }

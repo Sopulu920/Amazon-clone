@@ -1,16 +1,21 @@
-"use client"
+"use client";
 import dynamic from "next/dynamic"
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons/faCaretDown"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import Side from "./side-bar"
 import Image from "next/image"
-import amazonLogo from "../asset/image/amazon logo.jpg"
+import amazonLogo from "../../asset/image/amazon logo.jpg"
+import { useState } from "react"
 
 const FontAwesomeIcon = dynamic(() => import("@fortawesome/react-fontawesome").then(mod => mod.FontAwesomeIcon), { ssr: false })
 
 export default function Header() {
+
+    const [sideModal, setSideModal] = useState(false)
+
 
     return (
         <>
@@ -25,11 +30,11 @@ export default function Header() {
 
                 <button className="navbar-btn">
                     <span className="navbar-btn-up deliver">Deliver to</span>
-                    <span className="navbar-btn-down"><FontAwesomeIcon icon={faLocationDot} /> nigeria</span>
+                    <span className="navbar-btn-down"><FontAwesomeIcon icon={faLocationDot} /> Nigeria</span>
                 </button>
                 <div className="search-space">
                     <button className="all-btn">
-                        all
+                        All
                     </button>
                     <input
                         className="search-bar"
@@ -65,7 +70,7 @@ export default function Header() {
             </div>
 
             <div className="navbar2">
-                <button>
+                <button onClick={() => setSideModal(true)}>
                     <FontAwesomeIcon icon={faBars} /> all
                 </button>
                 <button>
@@ -83,10 +88,10 @@ export default function Header() {
                 <button>
                     customer service
                 </button>
-                <button>
-                    sell
-                </button>
             </div>
+            <Side
+                isOpen={sideModal}
+                onClose={() => setSideModal(false)} />
         </>
     )
 }
