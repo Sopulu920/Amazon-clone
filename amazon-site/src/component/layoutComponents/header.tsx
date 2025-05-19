@@ -24,8 +24,6 @@ export default function Header() {
                     className="image-btn"
                     src={amazonLogo}
                     alt="Amazon Logo"
-                    width={150}
-                    height={70}
                 />
 
                 <button className="navbar-btn">
@@ -57,14 +55,14 @@ export default function Header() {
                     <span className="navbar-btn-up">Returns</span>
                     <span className="navbar-btn-down">& orders</span>
                 </button>
-                <button className="navbar-btn">
-                    <span className="navbar-btn-up zero">0</span>
-                    <span className="navbar-btn-down">
+                <button className="navbar-btn">                    
+                    <div className="carts">
+                        <div className="zero">0</div>
                         <FontAwesomeIcon
                             className="cart"
                             icon={faCartShopping}
                         />Cart
-                    </span>
+                    </div>
                 </button>
 
             </div>
@@ -87,6 +85,9 @@ export default function Header() {
                 </button>
                 <button>
                     customer service
+                </button>
+                <button>
+                    sell
                 </button>
             </div>
             <Side

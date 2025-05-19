@@ -71,7 +71,7 @@ export default function Footer() {
                 <Image
                     src={amazonLogo2}
                     alt="amazon logo"
-                    width={100}
+                    className="footerImg"
                 />
 
                 <div className="footer-layer3-btn">
