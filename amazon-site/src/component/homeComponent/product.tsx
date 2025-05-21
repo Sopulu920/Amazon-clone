@@ -360,6 +360,7 @@ export default function Product() {
 
                 </div>
 
+                {/* kitchen */}
                 <div className="product-card">
 
                     <div>
@@ -374,7 +375,7 @@ export default function Product() {
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    headset
+                                    pot
                                 </div>
                             </div>
                             <div className="product-name">
@@ -384,7 +385,7 @@ export default function Product() {
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    chair
+                                    plate
                                 </div>
                             </div>
                             <div>
@@ -394,7 +395,7 @@ export default function Product() {
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    keyboard
+                                    blender
                                 </div>
                             </div>
                             <div>
@@ -404,7 +405,7 @@ export default function Product() {
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    mice
+                                    cutlery
                                 </div>
                             </div>
                         </div>
@@ -416,6 +417,7 @@ export default function Product() {
 
                 </div>
 
+                {/* gaming shop */}
                 <div className="product-card">
 
                     <div>
@@ -425,7 +427,7 @@ export default function Product() {
                         <div className="product-image">
                             <div>
                                 <Image
-                                    src={game16}
+                                    src={game2}
                                     alt="product"
                                     className="productImg2"
                                 />
@@ -436,190 +438,152 @@ export default function Product() {
                         </div>
                     </div>
 
-                    <a className="product-card-link" href="">
+                    <a className="product-card-link3" href="">
                         See more
                     </a>
 
                 </div>
 
+                {/* new home */}
                 <div className="product-card">
 
                     <div>
                         <div className="product-title">
-                            Gaming accessories
+                            New home arrivals under
                         </div>
                         <div className="product-image">
                             <div>
                                 <Image
-                                    src={game28}
+                                    src={home7}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    headset
+                                    bottle
                                 </div>
                             </div>
                             <div className="product-name">
                                 <Image
-                                    src={game26}
+                                    src={home10}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    chair
+                                    bedding
                                 </div>
                             </div>
                             <div>
                                 <Image
-                                    src={game25}
+                                    src={kit1}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    keyboard
+                                    dining
                                 </div>
                             </div>
                             <div>
                                 <Image
-                                    src={game29}
+                                    src={kit5}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    mice
+                                    kettle
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <br />
-                    <br />
-
                     <a className="product-card-link" href="">
+                        Shop the latest from Home
+                    </a>
+
+                </div>
+
+                {/* gift */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Gifts for Dad under $25
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={fas8}
+                                    alt="product"
+                                    className="productImg2"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link3" href="">
                         See more
                     </a>
 
                 </div>
 
+                {/* refresh */}
                 <div className="product-card">
 
                     <div>
                         <div className="product-title">
-                            Gaming accessories
+                            Refresh your space
                         </div>
                         <div className="product-image">
                             <div>
                                 <Image
-                                    src={game28}
+                                    src={care11}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    headset
+                                    beauty
                                 </div>
                             </div>
                             <div className="product-name">
                                 <Image
-                                    src={game26}
+                                    src={exe4}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    chair
+                                    excersise
                                 </div>
                             </div>
                             <div>
                                 <Image
-                                    src={game25}
+                                    src={home6}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    keyboard
+                                    cleaning
                                 </div>
                             </div>
                             <div>
                                 <Image
-                                    src={game29}
+                                    src={home8}
                                     alt="product"
                                     className="productImg"
                                 />
                                 <div className="product-name">
-                                    mice
+                                    storage
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <br />
-                    <br />
-
                     <a className="product-card-link" href="">
                         See more
                     </a>
 
                 </div>
-
-                <div className="product-card">
-
-                    <div>
-                        <div className="product-title">
-                            Gaming accessories
-                        </div>
-                        <div className="product-image">
-                            <div>
-                                <Image
-                                    src={game28}
-                                    alt="product"
-                                    className="productImg"
-                                />
-                                <div className="product-name">
-                                    headset
-                                </div>
-                            </div>
-                            <div className="product-name">
-                                <Image
-                                    src={game26}
-                                    alt="product"
-                                    className="productImg"
-                                />
-                                <div className="product-name">
-                                    chair
-                                </div>
-                            </div>
-                            <div>
-                                <Image
-                                    src={game25}
-                                    alt="product"
-                                    className="productImg"
-                                />
-                                <div className="product-name">
-                                    keyboard
-                                </div>
-                            </div>
-                            <div>
-                                <Image
-                                    src={game29}
-                                    alt="product"
-                                    className="productImg"
-                                />
-                                <div className="product-name">
-                                    mice
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br />
-                    <br />
-
-                    <a className="product-card-link" href="">
-                        See more
-                    </a>
-
-                </div>
-
             </div>
+
+            
         </>
     )
 }
