@@ -185,7 +185,14 @@ import toy12 from "../../asset/image/toys/toy12.jpg"
 import toy13 from "../../asset/image/toys/toy13.jpg"
 import toy14 from "../../asset/image/toys/toy14.jpg"
 
+const cards = [care9, ele9, fas40, care11, fas38, ele21, fas37, fas19, ele25, fas21, fas19]
+const cards2 = [ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8, ele9, ele10, ele11, ele12]
+const cards3 = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12, book13,]
+const cards4 = [game10, game4, game12, game13, game14, game15, game16, game17, game18, game19, game21, game20, game22, game23, game24]
+const cards5 = [fas9, fas10, fas11, fas12, fas13, fas14, fas15, fas16, fas17, fas18, fas22, fas23, fas24, fas25, fas26, fas27, fas28, fas29, fas30]
+
 export default function Product() {
+
     return (
         <>
             <div className="product">
@@ -583,7 +590,786 @@ export default function Product() {
                 </div>
             </div>
 
-            
+            {/* first card slider */}
+            <div className="product2">
+                <div className="product2-title">
+                    Top picks for Nigeria
+                </div>
+                <div className="product2image">
+
+                    {cards.map((c) => (
+
+                        <Image
+                            src={c}
+                            alt="w"
+                            className="product2Img" />
+
+                    ))}
+                </div>
+            </div>
+
+            <div className="product">
+                {/* sport */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Sports Gear
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={exe6}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bells
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={fas2}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    swim suit
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={exe5}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bicycle
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={fas42}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    googles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                {/* Pc */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Level up your PC
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={ele22}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    monitor
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={ele19}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    laptop
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele23}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    SSD
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele28}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    tablet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                {/* ele */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Electronics
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={ele18}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    camera
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={ele17}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    headphones
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele3}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    tablet
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele14}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    phone
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Beauty Products
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={care1}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    living room
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={care2}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    closet
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={care4}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bathroom
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={care6}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    library
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+            </div>
+
+            {/* second slider */}
+            <div className="product2">
+                <div className="product2-title">
+                    Best Sellers in Computers & Accessories
+                </div>
+                <div className="product2image">
+
+                    {cards2.map((c) => (
+
+                        <Image
+                            src={c}
+                            alt="w"
+                            className="product2Img" />
+
+                    ))}
+                </div>
+            </div>
+
+             <div className="product">
+                {/* sport */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Sports Gear
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={exe6}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bells
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={fas2}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    swim suit
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={exe5}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bicycle
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={fas42}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    googles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                {/* Pc */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Level up your PC
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={ele22}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    monitor
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={ele19}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    laptop
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele23}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    SSD
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele28}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    tablet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                {/* ele */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Electronics
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={ele18}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    camera
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={ele17}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    headphones
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele3}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    tablet
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele14}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    phone
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Beauty Products
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={care1}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    living room
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={care2}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    closet
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={care4}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bathroom
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={care6}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    library
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+            </div>
+
+            {/* third slider */}
+            <div className="product2">
+                <div className="product2-title">
+                    Most Read
+                </div>
+                <div className="product2image">
+
+                    {cards3.map((c) => (
+
+                        <Image
+                            src={c}
+                            alt="w"
+                            className="product2Img" />
+
+                    ))}
+                </div>
+            </div>
+
+            {/* forth slider */}
+            <div className="product2">
+                <div className="product2-title">
+                    Games
+                </div>
+                <div className="product2image">
+
+                    {cards4.map((c) => (
+
+                        <Image
+                            src={c}
+                            alt="w"
+                            className="product2Img" />
+
+                    ))}
+                </div>
+            </div>
+
+             <div className="product">
+                {/* sport */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Sports Gear
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={exe6}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bells
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={fas2}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    swim suit
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={exe5}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bicycle
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={fas42}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    googles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                {/* Pc */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Level up your PC
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={ele22}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    monitor
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={ele19}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    laptop
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele23}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    SSD
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele28}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    tablet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                {/* ele */}
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Electronics
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={ele18}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    camera
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={ele17}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    headphones
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele3}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    tablet
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={ele14}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    phone
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+                <div className="product-card">
+
+                    <div>
+                        <div className="product-title">
+                            Beauty Products
+                        </div>
+                        <div className="product-image">
+                            <div>
+                                <Image
+                                    src={care1}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    living room
+                                </div>
+                            </div>
+                            <div className="product-name">
+                                <Image
+                                    src={care2}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    closet
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={care4}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    bathroom
+                                </div>
+                            </div>
+                            <div>
+                                <Image
+                                    src={care6}
+                                    alt="product"
+                                    className="productImg"
+                                />
+                                <div className="product-name">
+                                    library
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a className="product-card-link2" href="">
+                        Discover more in Home
+                    </a>
+
+                </div>
+
+            </div>
+
+            {/* fifth slider */}
+            <div className="product2">
+                <div className="product2-title">
+                    Lastest in fashion
+                </div>
+                <div className="product2image">
+
+                    {cards5.map((c) => (
+
+                        <Image
+                            src={c}
+                            alt="w"
+                            className="product2Img" />
+
+                    ))}
+                </div>
+            </div>
+
         </>
     )
 }

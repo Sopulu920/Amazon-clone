@@ -398,6 +398,7 @@ body {
 
 .page2 {
   margin-top: -12%;
+  padding: 2%;
 }
 
 .product {
@@ -405,7 +406,7 @@ body {
   grid-template-columns: 25% 25% 25% 25%;
   gap: 1%;
   justify-content: center;
-  margin: 2%;
+  margin-bottom: 2%;
 }
 
 .product-card {
@@ -445,7 +446,7 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 10rem;
-  color: rgb(39, 98, 153);  
+  color: rgb(39, 98, 153);
 }
 
 .product-card-link2 {
@@ -453,10 +454,10 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 8rem;
-  color: rgb(39, 98, 153);  
+  color: rgb(39, 98, 153);
 }
 
-.product-image2  {
+.product-image2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
@@ -481,5 +482,32 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 7rem;
-  color: rgb(39, 98, 153);  
+  color: rgb(39, 98, 153);
+}
+
+.product2 {
+  background-color: rgb(255, 255, 255);
+  width: 103%;
+  margin-left: -1.5%;
+  margin-right: -1.5%;
+  margin-bottom: 2%;
+}
+
+.product2Img {
+  width: 25%;
+  height: 25vh;
+}
+
+.product2-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding: 3%;
+}
+
+.product2image {
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+  overflow-x: scroll;
 }
