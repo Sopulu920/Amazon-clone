@@ -856,7 +856,7 @@ export default function Product() {
                 </div>
             </div>
 
-             <div className="product">
+            <div className="product">
                 {/* sport */}
                 <div className="product-card">
 
@@ -1122,7 +1122,7 @@ export default function Product() {
                 </div>
             </div>
 
-             <div className="product">
+            <div className="product">
                 {/* sport */}
                 <div className="product-card">
 
