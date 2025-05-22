@@ -8,7 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 import Side from "./side-bar"
 import Image from "next/image"
 import amazonLogo from "../../asset/image/amazon logo.jpg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const FontAwesomeIcon = dynamic(() => import("@fortawesome/react-fontawesome").then(mod => mod.FontAwesomeIcon), { ssr: false })
 
@@ -16,10 +16,36 @@ export default function Header() {
 
     const [sideModal, setSideModal] = useState(false)
 
+    const [showNavbar, setShowNavbar] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0)
+    const [scrollTimeout, setScrollTimeout] = useState(null)
+
+    const handlescroll = () => {
+        const currentScroll = window.scrollY
+        if (currentScroll === 0) {
+            setShowNavbar(false)
+        }
+        else if (currentScroll < lastScrollY) {
+            setShowNavbar(true)
+        }
+        else {
+            setShowNavbar(false)
+        }
+        setLastScrollY(currentScroll)
+
+        
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handlescroll);
+        return () => {
+            window.removeEventListener('scroll', handlescroll)
+        }
+    }, [lastScrollY, scrollTimeout])
 
     return (
         <>
-            <div className="navbar">
+            <div className={showNavbar ? "navbar" : "defaultnavbar"}>
                 <Image
                     className="image-btn"
                     src={amazonLogo}
@@ -55,7 +81,7 @@ export default function Header() {
                     <span className="navbar-btn-up">Returns</span>
                     <span className="navbar-btn-down">& orders</span>
                 </button>
-                <button className="navbar-btn">                    
+                <button className="navbar-btn">
                     <div className="carts">
                         <div className="zero">0</div>
                         <FontAwesomeIcon

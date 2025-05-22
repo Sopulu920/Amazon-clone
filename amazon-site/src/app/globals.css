@@ -32,6 +32,17 @@ body {
 
 /* Nav Bar */
 .navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(19, 25, 33);
+  padding: 1%;
+  height: 5vh;
+  width: 99%;
+}
+
+.defaultnavbar{
   display: flex;
   justify-content: space-between;
   background-color: rgb(19, 25, 33);
@@ -559,4 +570,26 @@ body {
 
 .space{
   padding: 2%;
+  background-color: white;
+}
+
+.see{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sign{
+  background-color: yellow;
+  border-radius: 25px;
+  padding: 1%;
+  margin: 1%;
+  margin-left: 40%;
+  margin-right: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new{
+  font-size: 0.7rem;
 }
